@@ -49,7 +49,7 @@ def spam_handler():
     print("Введите номер телефона (Пример: 79041926761) ")
     phone = parse_phone(input(f"{BRIGHT}{BLUE}spammer >> {RESET_ALL}"))
     print()
-    print("Использовать прокси? (ОЧЕНЬ НУЖНО)(y/n)")
+    print("Использовать прокси? (y/n)")
     proxy = input(f"{BRIGHT}{BLUE}sugarbomber >> {RESET_ALL}")
     if proxy.lower() == "y":
         proxies = generate_proxy()
