@@ -720,11 +720,11 @@ def update():
         elif exists("/data/data/com.termux/files/usr/bin") and isfile("/data/data/com.termux/files/usr/bin/spammer"):
             file = open("/data/data/com.termux/files/usr/bin/spammer", "wb")
         try:
-            file.write(get("https://raw.githubusercontent.com/cludeex/spammer/master/spammer.py").content)
+            file.write(get("https://raw.githubusercontent.com/marselshow/sugarbomber/main/spammer.py").content)
             file.close()
             system("spammer")
         except UnboundLocalError:
-            system("cd $HOME && rm -rf spammer && git clone https://github.com/cludeex/spammer && cd spammer && sh install.sh")
+            system("cd $HOME && rm -rf spammer && git clone https://github.com/marselshow/sugarbomber && cd spammer && sh install.sh")
     else:
         main()
 
